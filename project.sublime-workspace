@@ -1,0 +1,799 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"echo",
+				"echo	echo \"…\""
+			],
+			[
+				"ech",
+				"enchant_dict_check"
+			],
+			[
+				"bus",
+				"BusinessName"
+			],
+			[
+				"Bus",
+				"Businesslocation"
+			],
+			[
+				"Bu",
+				"Businesslocation"
+			],
+			[
+				"Busin",
+				"Business"
+			],
+			[
+				"fb",
+				"fblink"
+			],
+			[
+				"you",
+				"Youtube"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
+				"sec",
+				"Secretary"
+			],
+			[
+				"F",
+				"Failed"
+			],
+			[
+				"if",
+				"if	if …"
+			],
+			[
+				"name",
+				"nameChange"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"mem",
+				"member_login"
+			],
+			[
+				"change",
+				"changePass"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"get",
+				"_GET"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"date",
+				"dated"
+			],
+			[
+				"An",
+				"anzappvictoria"
+			],
+			[
+				"fir",
+				"first_name"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"las",
+				"last_name"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"sty",
+				"STYLE	Tag"
+			],
+			[
+				"ico",
+				"icon-2x"
+			],
+			[
+				"chec",
+				"checked"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/views/welcome.blade.php",
+			"settings":
+			{
+				"buffer_size": 59,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/My Web Sites/admintemplate/theme-shop.biz/pixels/html/index.html",
+			"settings":
+			{
+				"buffer_size": 37883,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!doctype Html>\n\n<Html lang=\"en\">\n\n<head>\n\n<meta charset=\"UTF-8\">\n\n<title>@yield('title')</title>\n\n<meta name=\"viewport\" content=\"initial-scale=1.0,maximum-scale=1.0,user-scalable=no\">\n\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/bootstrap/css/bootstrap.min.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/todc-bootstrap.min.css') }}\">\n<!-- font awesome -->\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/font-awesome/css/font-awesome.min.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/retina.css') }}\">\n<!-- retina ready -->\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/js/lib/bootstrap-switch/stylesheets/bootstrap-switch.css') }}\">\n\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/js/lib/bootstrap-switch/stylesheets/ebro_bootstrapSwitch.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/js/lib/jvectormap/jquery-jvectormap-1.2.2.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/js/lib/jvectormap/jquery-jvectormap-1.2.2.css') }}\">\n\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/style.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/theme/color_1.css') }}\">\n\n<link rel=\"stylesheet\" href=\"{{ URL::asset('http://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=latin,latin-ext') }}\">\n\n \n<!-- flag icon set -->\n<link rel=\"stylesheet\" href=\"img/flags/flags.css\">\n \n \n</head>\n\n\n<body class=\" sidebar_hidden side_fixed\">\n\n	<div id=\"wrapper_all\">\n	<section id=\"breadcrumbs\">\n\n	  <div class=\"container\">\n	    <ul>\n	      <li><a href=\"index.php\">ANZAPP Admin</a></li>\n	      <li><span>@yield('title')</span></li>\n	    </ul>\n	  </div>\n	</section>		\n\n\n <footer id=\"footer\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <div class=\"col-sm-3\">\n                        &copy; 2013 Your Company\n                    </div>\n                    <div class=\"col-sm-8\">\n                        <ul>\n                            <li><a href=\"#\">Dashboard</a></li>\n                            <li>&middot;</li>\n                            <li><a href=\"#\">Terms of Service</a></li>\n                            <li>&middot;</li>\n                            <li><a href=\"#\">Privacy Policy</a></li>\n                            <li>&middot;</li>\n                            <li><a href=\"#\">Contact us</a></li>\n                        </ul>\n\n                    </div>\n                    <div class=\"col-sm-1 text-right\">\n                        <small class=\"text-muted\">v1.2</small>\n                    </div>\n                </div>\n            </div>\n        </footer>\n\n        	\n	</div>\n</body>\n\n\n\n\n\n\n \n	<!--[[ common plugins ]]-->\n\n	\n<script src=\"{{ URL::asset('admin/js/functions.js') }}\"></script>\n\n	<!-- jQuery -->\n<script src=\"admin/js/jquery.min.js\"></script>\n	<!-- bootstrap framework -->\n<script src=\"{{ URL::asset('admin/js/functions.js') }}\"></script>\n\n	<!-- jQuery resize event -->\n<script src=\"{{ URL::asset('admin/js/jquery.ba-resize.min.js') }}\"></script>\n\n\n	<!-- jquery cookie -->\n<script src=\"{{ URL::asset('admin/js/jquery_cookie.min.js') }}\"></script>\n\n\n	<!-- retina ready -->\n<script src=\"{{ URL::asset('admin/js/retina.min.js') }}\"></script>\n\n\n	<!-- typeahead -->\n<script src=\"{{ URL::asset('admin/js/lib/typeahead.js/typeahead.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/typeahead.js/hogan-2.0.0.js') }}\"></script>\n\n\n\n\n	<!-- tinyNav -->\n<script src=\"{{ URL::asset('admin/js/tinynav.js') }}\"></script>\n\n\n	<!-- slimscroll -->\n<script src=\"{{ URL::asset('admin/js/lib/jQuery-slimScroll/jquery.slimscroll.min.js') }}\"></script>\n\n\n	\n<script src=\"{{ URL::asset('admin/js/lib/bootstrap-switch/js/bootstrap-switch.min.js') }}\"></script>\n\n	<!-- bootstrap switch -->\n\n\n		\n\n	<!-- Navgoco -->\n<script src=\"{{ URL::asset('admin/js/lib/navgoco/jquery.navgoco.min.js') }}\"></script>\n\n\n		\n\n	<!-- ebro common scripts/functions -->\n<script src=\"{{ URL::asset('admin/js/ebro_common.js') }}\"></script>\n\n\n	\n\n	\n\n	<!--[[ page specific plugins ]]-->\n\n\n\n	<!-- peity (small charts) -->\n<script src=\"{{ URL::asset('admin/js/lib/peity/jquery.peity.min.js') }}\"></script>\n\n\n	<!-- vector map -->\n<script src=\"{{ URL::asset('admin/js/lib/jvectormap/jquery-jvectormap-1.2.2.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/jvectormap/maps/jquery-jvectormap-world-mill-en.js') }}\"></script>\n\n\n	<!-- easy pie chart -->\n<script src=\"{{ URL::asset('admin/js/lib/easy-pie-chart/jquery.easy-pie-chart.js') }}\"></script>\n\n\n	<!-- charts -->\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.pie.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.time.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.tooltip.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.resize.min.js') }}\"></script>\n\n	 \n<script src=\"{{ URL::asset('admin/js/pages/ebro_form_extended.js') }}\"></script>\n<script src=\"{{ URL::asset('admin/js/lib/datepicker/js/bootstrap-datepicker.js') }}\"></script>\n \n<script src=\"{{ URL::asset('admin/js/pages/ebro_dashboard1.js') }}\"></script>\n\n <script src=\"{{ URL::asset('admin/js/lib/timepicker/js/bootstrap-timepicker.min.js') }}\"></script>\n\n \n\n\n \n\n",
+			"settings":
+			{
+				"buffer_size": 5297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/layouts/header.blade.php",
+			"settings":
+			{
+				"buffer_size": 41167,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/anzapp/admin/edit-events.php",
+		"/C/wamp/www/anzapp/anzapp-faq.php",
+		"/C/wamp/www/anzapp/admin/add-faq-data.php",
+		"/C/wamp/www/anzapp/admin/show-member-detail.php",
+		"/C/wamp/www/anzapp/updateProfile.php",
+		"/C/wamp/www/anzapp/footer.php",
+		"/C/wamp/www/anzapp/contact.php",
+		"/C/wamp/www/anzapp/admin/show-events.php",
+		"/C/wamp/www/anzapp/ajax.php",
+		"/C/wamp/www/anzapp/admin/sidebar.php",
+		"/C/wamp/www/anzapp/profile.php",
+		"/C/wamp/www/anzapp/register.php",
+		"/C/wamp/www/anzapp/admin/change-contactinfo.php",
+		"/C/wamp/www/anzapp/header.php",
+		"/C/wamp/www/anzapp/admin/add-event.php",
+		"/C/wamp/www/anzapp/admin/show-upcomingevents.php",
+		"/C/wamp/www/anzapp/admin/add-upcommingEvent.php",
+		"/C/wamp/www/anzapp/CMEActivities.php",
+		"/C/wamp/www/anzapp/fullcalendar/json.html",
+		"/C/wamp/www/anzapp/upcomingevents.php",
+		"/C/wamp/www/anzapp/eventDetails.php",
+		"/C/wamp/www/anzapp/about.php",
+		"/C/wamp/www/anzapp/admin/login.php",
+		"/C/wamp/www/anzapp/login.php",
+		"/C/wamp/www/anzapp/ProfileSettings.php",
+		"/C/wamp/www/project/resources/views/welcome.blade.php",
+		"/C/wamp/www/project/resources/views/layouts/master.blade.php",
+		"/C/wamp/www/laravel/resources/views/layouts/header.blade.php",
+		"/C/wamp/www/laravel/resources/views/layouts/test.blade.php",
+		"/C/wamp/www/project/config/app.php",
+		"/C/wamp/www/project/composer.json",
+		"/C/wamp/www/anzapp/admin/index.php",
+		"/C/wamp/www/anzapp/admin/footer.php",
+		"/C/wamp/www/laravel/resources/views/welcome.blade.php",
+		"/C/Users/bhutto/Desktop/header.blade.php",
+		"/C/wamp/www/laravel/config/database.php",
+		"/C/wamp/www/anzapp/forgot-password.php",
+		"/C/wamp/www/anzapp/ExecutiveCommittee.php",
+		"/C/wamp/www/anzapp/admin/edit-main-widget.php",
+		"/C/wamp/www/anzapp/admin/add-profile-account.php",
+		"/C/wamp/www/anzapp/admin/add-about-data.php",
+		"/C/wamp/www/anzapp/index.php",
+		"/C/wamp/www/anzapp/admin/edit-upcoming-events.php",
+		"/C/wamp/www/anzapp/admin/edit-news.php",
+		"/C/wamp/www/anzapp/admin/show-news.php",
+		"/C/wamp/www/anzapp/fourm/create_topic.php",
+		"/C/Users/bhutto/Downloads/PHPMailerAutoload.php",
+		"/C/wamp/www/anzapp/fullcalendar/mail.php",
+		"/C/wamp/www/anzapp/admin/show-upcommingevents.php",
+		"/C/Users/bhutto/Downloads/class.smtp.php",
+		"/C/wamp/www/anzapp/admin/add-file.php",
+		"/C/wamp/www/anzapp/admin/manage-files.php",
+		"/C/wamp/www/anzapp/admin/add-description.php",
+		"/C/wamp/www/anzapp/admin/profiles.php",
+		"/C/wamp/www/anzapp/objectives.php",
+		"/C/wamp/www/anzapp/fullcalendar/php/get-events.php",
+		"/C/wamp/www/anzapp/admin/header.php",
+		"/C/wamp/www/anzapp/admin/txt.html",
+		"/C/wamp/www/anzapp/admin/show-members.php",
+		"/C/wamp/www/anzapp/admin/showDetails.php",
+		"/C/wamp/www/anzapp/admin/show-profiles.php",
+		"/C/wamp/www/anzapp/admin/add-news.php",
+		"/C/wamp/www/anzapp/add-file.php",
+		"/C/wamp/www/anzapp/admin/js/ebro_common.js",
+		"/C/wamp/www/anzapp/admin/show-request-details.php",
+		"/C/wamp/www/anzapp/admin/Gallery.php",
+		"/C/wamp/www/anzapp/admin/accept-user-request.php",
+		"/C/wamp/www/anzapp/admin/add-upcommingEvent2.php",
+		"/C/wamp/www/anzapp/admin/admin-profile.php",
+		"/C/wamp/www/anzapp/admin/contactuser.php",
+		"/C/wamp/www/anzapp/fourm/main_forum.php",
+		"/C/wamp/www/anzapp/connection-string.php",
+		"/C/wamp/www/anzapp/fourm/view_topic.php",
+		"/C/wamp/www/anzapp/css/settings1dc6.css"
+	],
+	"find":
+	{
+		"height": 63.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\wamp\\www\\anzapp",
+			"C:\\wamp\\www\\project",
+			"C:\\wamp\\www\\anzapp\\admin"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"quick",
+			"script",
+			"scrip",
+			"echo",
+			"objectives",
+			"add-description",
+			"<meta name=\"generator\" content=\"WordPress 4.1.1\" />",
+			"update",
+			"CMEActivities",
+			"serac",
+			"echo",
+			"add",
+			"HTML",
+			"}}",
+			"{{",
+			"Blade::setRawTags",
+			"URL::asset",
+			"URL::asset('admin/css",
+			"bootstrap",
+			"--></script>",
+			"css/admin",
+			"public/",
+			">",
+			"<link rel=\"stylesheet\" href=\"",
+			"}}",
+			"{{ URL::asset",
+			"Html::script",
+			"Html::style",
+			"HTML",
+			"}}}}",
+			"}",
+			">\n",
+			"windo",
+			"window",
+			"save",
+			"font",
+			"php",
+			"profiles",
+			"images",
+			"edit-n",
+			"events",
+			"upevents",
+			"mail",
+			"dashboard1.html",
+			"texta",
+			"<a href=\"#\">ANZAPP Admin</a>",
+			"<a href=\"index.php\">ANZAPP Admin</a>",
+			"change-Status-member",
+			"showDetails",
+			"\"",
+			"show-ac",
+			"show-mem",
+			"upda",
+			"savepas",
+			"sucess",
+			"status"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"add-faq-data",
+			"",
+			"Activities",
+			"Html",
+			"!!}",
+			"{!!",
+			"HTML::style",
+			"HTML::style('admin/css",
+			"-->",
+			"admin",
+			"",
+			"></script>",
+			"<script src=\"",
+			"}}\">",
+			"<link rel=\"stylesheet\" href=\"{{ URL::asset",
+			"<link rel=\"stylesheet\" href=\"",
+			"URL::asset",
+			"Html",
+			"}}",
+			">",
+			"<a href=\"index.php\">ANZAPP Admin</a>",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/welcome.blade.php",
+					"settings":
+					{
+						"buffer_size": 59,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/My Web Sites/admintemplate/theme-shop.biz/pixels/html/index.html",
+					"settings":
+					{
+						"buffer_size": 37883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 5297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5272,
+								5288
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5418.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "resources/views/layouts/header.blade.php",
+					"settings":
+					{
+						"buffer_size": 41167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15567,
+								15567
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 92.0,
+						"translation.y": 8838.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 286.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"welcome",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"shoe",
+				"anzapp/admin/show-events.php"
+			],
+			[
+				"aja",
+				"anzapp/ajax.php"
+			],
+			[
+				"contact",
+				"anzapp/contact.php"
+			],
+			[
+				"footer",
+				"anzapp/footer.php"
+			],
+			[
+				"edit",
+				"anzapp/admin/edit-events.php"
+			],
+			[
+				"anzapp-faq",
+				"anzapp/anzapp-faq.php"
+			],
+			[
+				"side",
+				"anzapp/admin/sidebar.php"
+			],
+			[
+				"show-member-detail.php",
+				"anzapp/admin/show-member-detail.php"
+			],
+			[
+				"profile",
+				"anzapp/profile.php"
+			],
+			[
+				"upda",
+				"anzapp/updateProfile.php"
+			],
+			[
+				"head",
+				"anzapp/header.php"
+			],
+			[
+				"regis",
+				"anzapp/register.php"
+			],
+			[
+				"prof",
+				"anzapp/ProfileSettings.php"
+			],
+			[
+				"login",
+				"anzapp/login.php"
+			],
+			[
+				"abou",
+				"anzapp/about.php"
+			],
+			[
+				"even",
+				"anzapp/eventDetails.php"
+			],
+			[
+				"upcomin",
+				"anzapp/upcomingevents.php"
+			],
+			[
+				"cme",
+				"anzapp/CMEActivities.php"
+			],
+			[
+				"header",
+				"anzapp/header.php"
+			],
+			[
+				"aad-up",
+				"anzapp/admin/add-upcommingEvent.php"
+			],
+			[
+				"show-up",
+				"anzapp/admin/show-upcomingevents.php"
+			],
+			[
+				"add-e",
+				"anzapp/admin/add-event.php"
+			],
+			[
+				"composer",
+				"project/composer.json"
+			],
+			[
+				"app",
+				"project/config/app.php"
+			],
+			[
+				"welcom",
+				"project/resources/views/welcome.blade.php"
+			],
+			[
+				"inde",
+				"anzapp/admin/index.php"
+			],
+			[
+				"show",
+				"anzapp/admin/show-events.php"
+			],
+			[
+				"index",
+				"anzapp/admin/index.php"
+			],
+			[
+				"add-ab",
+				"anzapp/admin/add-about-data.php"
+			],
+			[
+				"ex",
+				"anzapp/ExecutiveCommittee.php"
+			],
+			[
+				"ford",
+				"forgot-password.php"
+			],
+			[
+				"add-p",
+				"admin/add-profile-account.php"
+			],
+			[
+				"eventde",
+				"eventDetails.php"
+			],
+			[
+				"sho",
+				"admin/show-events.php"
+			],
+			[
+				"reg",
+				"register.php"
+			],
+			[
+				"add-eve",
+				"admin/add-event.php"
+			],
+			[
+				"ed",
+				"admin/edit-news.php"
+			],
+			[
+				"show-new",
+				"admin/show-news.php"
+			],
+			[
+				"add-u",
+				"admin/add-upcommingEvent.php"
+			],
+			[
+				"show-u",
+				"admin/show-upcomingevents.php"
+			],
+			[
+				"ajax",
+				"ajax.php"
+			],
+			[
+				"contac",
+				"contact.php"
+			],
+			[
+				"mail",
+				"fullcalendar/mail.php"
+			],
+			[
+				"upco",
+				"upcomingevents.php"
+			],
+			[
+				"objectives",
+				"objectives.php"
+			],
+			[
+				"profiles",
+				"admin/profiles.php"
+			],
+			[
+				"profi",
+				"profile.php"
+			],
+			[
+				"add-des",
+				"admin/add-description.php"
+			],
+			[
+				"add-about-data",
+				"admin/add-about-data.php"
+			],
+			[
+				"manage-f",
+				"admin/manage-files.php"
+			],
+			[
+				"add-file.php",
+				"admin/add-file.php"
+			],
+			[
+				"news",
+				"admin/add-news.php"
+			],
+			[
+				"show-pro",
+				"admin/show-profiles.php"
+			],
+			[
+				"add-pr",
+				"admin/add-profile-account.php"
+			],
+			[
+				"accept-user-request.php",
+				"admin/accept-user-request.php"
+			],
+			[
+				"gallery",
+				"admin/Gallery.php"
+			],
+			[
+				"show-members",
+				"admin/show-members.php"
+			],
+			[
+				"add-profile-account",
+				"admin/add-profile-account.php"
+			],
+			[
+				"show-pr",
+				"admin/show-profiles.php"
+			],
+			[
+				"comm",
+				"admin/js/ebro_common.js"
+			],
+			[
+				"conn",
+				"connection-string.php"
+			],
+			[
+				"lo",
+				"login.php"
+			],
+			[
+				"logn",
+				"login.php"
+			],
+			[
+				"upci",
+				"upcomingevents.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 205.0,
+	"status_bar_visible": true
+}
