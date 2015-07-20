@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('members', 'MembersController@index');
+Route::get('members/add', 'MembersController@create');
 
 Route::get('home', 'HomeController@index');
 
