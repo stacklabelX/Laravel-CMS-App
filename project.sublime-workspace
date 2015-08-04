@@ -127,32 +127,92 @@
 			"file": "resources/views/welcome.blade.php",
 			"settings":
 			{
-				"buffer_size": 59,
+				"buffer_size": 272,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/My Web Sites/admintemplate/theme-shop.biz/pixels/html/index.html",
+			"file": "resources/views/members/members.blade.php",
 			"settings":
 			{
-				"buffer_size": 37883,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!doctype Html>\n\n<Html lang=\"en\">\n\n<head>\n\n<meta charset=\"UTF-8\">\n\n<title>@yield('title')</title>\n\n<meta name=\"viewport\" content=\"initial-scale=1.0,maximum-scale=1.0,user-scalable=no\">\n\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/bootstrap/css/bootstrap.min.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/todc-bootstrap.min.css') }}\">\n<!-- font awesome -->\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/font-awesome/css/font-awesome.min.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/retina.css') }}\">\n<!-- retina ready -->\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/js/lib/bootstrap-switch/stylesheets/bootstrap-switch.css') }}\">\n\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/js/lib/bootstrap-switch/stylesheets/ebro_bootstrapSwitch.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/js/lib/jvectormap/jquery-jvectormap-1.2.2.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/js/lib/jvectormap/jquery-jvectormap-1.2.2.css') }}\">\n\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/style.css') }}\">\n<link rel=\"stylesheet\" href=\"{{ URL::asset('admin/css/theme/color_1.css') }}\">\n\n<link rel=\"stylesheet\" href=\"{{ URL::asset('http://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=latin,latin-ext') }}\">\n\n \n<!-- flag icon set -->\n<link rel=\"stylesheet\" href=\"img/flags/flags.css\">\n \n \n</head>\n\n\n<body class=\" sidebar_hidden side_fixed\">\n\n	<div id=\"wrapper_all\">\n	<section id=\"breadcrumbs\">\n\n	  <div class=\"container\">\n	    <ul>\n	      <li><a href=\"index.php\">ANZAPP Admin</a></li>\n	      <li><span>@yield('title')</span></li>\n	    </ul>\n	  </div>\n	</section>		\n\n\n <footer id=\"footer\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <div class=\"col-sm-3\">\n                        &copy; 2013 Your Company\n                    </div>\n                    <div class=\"col-sm-8\">\n                        <ul>\n                            <li><a href=\"#\">Dashboard</a></li>\n                            <li>&middot;</li>\n                            <li><a href=\"#\">Terms of Service</a></li>\n                            <li>&middot;</li>\n                            <li><a href=\"#\">Privacy Policy</a></li>\n                            <li>&middot;</li>\n                            <li><a href=\"#\">Contact us</a></li>\n                        </ul>\n\n                    </div>\n                    <div class=\"col-sm-1 text-right\">\n                        <small class=\"text-muted\">v1.2</small>\n                    </div>\n                </div>\n            </div>\n        </footer>\n\n        	\n	</div>\n</body>\n\n\n\n\n\n\n \n	<!--[[ common plugins ]]-->\n\n	\n<script src=\"{{ URL::asset('admin/js/functions.js') }}\"></script>\n\n	<!-- jQuery -->\n<script src=\"admin/js/jquery.min.js\"></script>\n	<!-- bootstrap framework -->\n<script src=\"{{ URL::asset('admin/js/functions.js') }}\"></script>\n\n	<!-- jQuery resize event -->\n<script src=\"{{ URL::asset('admin/js/jquery.ba-resize.min.js') }}\"></script>\n\n\n	<!-- jquery cookie -->\n<script src=\"{{ URL::asset('admin/js/jquery_cookie.min.js') }}\"></script>\n\n\n	<!-- retina ready -->\n<script src=\"{{ URL::asset('admin/js/retina.min.js') }}\"></script>\n\n\n	<!-- typeahead -->\n<script src=\"{{ URL::asset('admin/js/lib/typeahead.js/typeahead.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/typeahead.js/hogan-2.0.0.js') }}\"></script>\n\n\n\n\n	<!-- tinyNav -->\n<script src=\"{{ URL::asset('admin/js/tinynav.js') }}\"></script>\n\n\n	<!-- slimscroll -->\n<script src=\"{{ URL::asset('admin/js/lib/jQuery-slimScroll/jquery.slimscroll.min.js') }}\"></script>\n\n\n	\n<script src=\"{{ URL::asset('admin/js/lib/bootstrap-switch/js/bootstrap-switch.min.js') }}\"></script>\n\n	<!-- bootstrap switch -->\n\n\n		\n\n	<!-- Navgoco -->\n<script src=\"{{ URL::asset('admin/js/lib/navgoco/jquery.navgoco.min.js') }}\"></script>\n\n\n		\n\n	<!-- ebro common scripts/functions -->\n<script src=\"{{ URL::asset('admin/js/ebro_common.js') }}\"></script>\n\n\n	\n\n	\n\n	<!--[[ page specific plugins ]]-->\n\n\n\n	<!-- peity (small charts) -->\n<script src=\"{{ URL::asset('admin/js/lib/peity/jquery.peity.min.js') }}\"></script>\n\n\n	<!-- vector map -->\n<script src=\"{{ URL::asset('admin/js/lib/jvectormap/jquery-jvectormap-1.2.2.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/jvectormap/maps/jquery-jvectormap-world-mill-en.js') }}\"></script>\n\n\n	<!-- easy pie chart -->\n<script src=\"{{ URL::asset('admin/js/lib/easy-pie-chart/jquery.easy-pie-chart.js') }}\"></script>\n\n\n	<!-- charts -->\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.pie.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.time.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.tooltip.min.js') }}\"></script>\n\n<script src=\"{{ URL::asset('admin/js/lib/flot/jquery.flot.resize.min.js') }}\"></script>\n\n	 \n<script src=\"{{ URL::asset('admin/js/pages/ebro_form_extended.js') }}\"></script>\n<script src=\"{{ URL::asset('admin/js/lib/datepicker/js/bootstrap-datepicker.js') }}\"></script>\n \n<script src=\"{{ URL::asset('admin/js/pages/ebro_dashboard1.js') }}\"></script>\n\n <script src=\"{{ URL::asset('admin/js/lib/timepicker/js/bootstrap-timepicker.min.js') }}\"></script>\n\n \n\n\n \n\n",
-			"settings":
-			{
-				"buffer_size": 5297,
+				"buffer_size": 2972,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/members/AddMember.blade.php",
+			"settings":
+			{
+				"buffer_size": 4159,
+				"line_ending": "Windows",
+				"name": "@extends('layouts.header')"
+			}
+		},
+		{
+			"contents": "\n\n<?php include ('header.php'); \n\nif (isset($_POST[\"submit\"])) {\n	# code...\n\nrequire 'PHPMailerAutoload.php';\n\n$mail = new PHPMailer;\n\n//$mail->SMTPDebug = 3;                               // Enable verbose debug output\n\n$mail->isSMTP();                                      // Set mailer to use SMTP\n$mail->Host = 'localhost';  // Specify main and backup SMTP servers\n$mail->SMTPAuth = true;                               // Enable SMTP authentication\n$mail->Username = 'support@anzappvictoria.com';                 // SMTP username\n$mail->Password = 'Support@123';                           // SMTP password\n$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted\n$mail->Port = 587;                                    // TCP port to connect to\n\n$mail->From = 'contact@anzappvictoria.com';\n$mail->FromName = 'Contact';\n$mail->addAddress('contact@anzappvictoria.com', 'Admin');   \n                                // Set email format to HTML\n\n$mail->Subject = 'Inquiry - '.$_POST[\"your-name\"].'';\n$mail->Body    = 'New Inquiry from Website<br/>Name - '.$_POST[\"your-name\"].' <br/>\nSubject - '.$_POST[\"your-name\"].' <br/> Subject - '.$_POST[\"your-email\"].'\n<br/> Subject - '.$_POST[\"your-message\"].'\n';\n$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';\n\nif(!$mail->send()) {\n    echo 'Message could not be sent.';\n    echo 'Mailer Error: ' . $mail->ErrorInfo;\n} else {\n    echo 'Message has been sent';\n}\n}\n\n\n\n\n\n\n?>\n\n\n\n<div id=\"page-title\">\n\n   <div class=\"width-container\">\n\n      <h1>Contact Us</h1>\n\n      <ul id=\"bread-crumb\">\n\n         <li class=\"home\"><span typeof=\"v:Breadcrumb\"><a rel=\"v:url\" property=\"v:title\" title=\"Go to Cosmedical WordPress Theme.\" href=\"index.php\" class=\"home\"><i class=\"fa fa-home\"></i></a></span></li>\n\n         <li><span typeof=\"v:Breadcrumb\"><a rel=\"v:url\" property=\"v:title\" title=\"Go to News.\" href=\"index.php\" class=\"post-root post post-post\">Home</a></span></li>\n\n             <li class=\"current_item\"><span typeof=\"v:Breadcrumb\"><span property=\"v:title\">Contact</span></span></li>\n\n      </ul>\n\n      <div class=\"clearfix\"></div>\n\n   </div>\n\n</div>\n\n  <div class=\"clearfix\"></div>\n\n  \n\n  <div id=\"map-progression\">\n\n						<div class=\"google-maps-expand\">\n\n							<div id=\"map_canvas_35\" class=\"googlemap \" style=\"height:400px;width:100%\">\n\n								<input class=\"title\" type=\"hidden\" value=\"Cosmedical\" /><input class=\"location\" type=\"hidden\" value=\"Melbourne  , Australia\" /><input class=\"zoom\" type=\"hidden\" value=\"15\" />\n\n								<div class=\"map_canvas\"></div>\n\n							</div>\n\n						</div>\n\n					</div>\n\n					<div id=\"main\">\n\n						<div class=\"width-container\">\n\n							<div id=\"sidebar-border\">\n\n								<div id=\"content-container\">\n\n									<div class=\"content-container-pro\">\n\n									<br/> <br/> <br/>\n\n										<h2>Office Location</h2>\n\n										<hr class=\"ls-sc-divider dotted grey \" style=\"margin-top: 20px;margin-bottom: 20px;\" />\n\n										<h5>ANZAPP Victoria</h5>\n\n										<p>\n\n										<div  id=\"contactDetails\" class=\"ls-sc-grid_6 alpha\">Secretary: Dr. Syed Raza Shabbir<br/>Melbourne 3000<br /> Victoria <br />  <br /></div>\n\n										<div class=\"ls-sc-grid_6 omega\"><a href=\"#\">Get Directions ⟶</a></div>\n\n										<div class=\"clear\"></div>\n\n										</p>\n\n										<hr class=\"ls-sc-divider dotted grey \" style=\"margin-top: 20px;margin-bottom: 20px;\" />\n\n										<h2>Send us a message</h2>\n\n										<div class=\"wpcf7\" id=\"wpcf7-f4-p25-o1\" lang=\"en-US\" dir=\"ltr\">\n\n											<div class=\"screen-reader-response\"></div>\n\n											<form name=\"\" action=\"\" method=\"post\" class=\"wpcf7-form\" novalidate=\"novalidate\">\n\n												<div style=\"display: none;\"> <input type=\"hidden\" name=\"_wpcf7\" value=\"4\" /> <input type=\"hidden\" name=\"_wpcf7_version\" value=\"4.1\" /> <input type=\"hidden\" name=\"_wpcf7_locale\" value=\"en_US\" /> <input type=\"hidden\" name=\"_wpcf7_unit_tag\" value=\"wpcf7-f4-p25-o1\" /> <input type=\"hidden\" name=\"_wpnonce\" value=\"2886a8aea8\" /></div>\n\n												<p>Your Name <span class=\"required\">*</span><br /> <span class=\"wpcf7-form-control-wrap your-name\"><input type=\"text\" name=\"your-name\" value=\"\" size=\"40\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required\" aria-required=\"true\" aria-invalid=\"false\" /></span></p>\n\n												<p>Your Email <span class=\"required\">*</span><br /> <span class=\"wpcf7-form-control-wrap your-email\"><input type=\"email\" name=\"your-email\" value=\"\" size=\"40\" class=\"wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email\" aria-required=\"true\" aria-invalid=\"false\" /></span></p>\n\n												<p>Subject<br /> <span class=\"wpcf7-form-control-wrap your-subject\"><input type=\"text\" name=\"your-subject\" value=\"\" size=\"40\" class=\"wpcf7-form-control wpcf7-text\" aria-invalid=\"false\" /></span></p>\n\n												<p>Your Message<br /> <span class=\"wpcf7-form-control-wrap your-message\"><textarea name=\"your-message\" cols=\"40\" rows=\"10\" class=\"wpcf7-form-control wpcf7-textarea\" aria-invalid=\"false\"></textarea></span></p>\n\n												<p><input name=\"submit\" type=\"submit\" value=\"Send Message\" class=\"wpcf7-form-control wpcf7-submit\" /></p>\n\n												<div class=\"wpcf7-response-output wpcf7-display-none\"></div>\n\n											</form>\n\n										</div>\n\n										<div class=\"clearfix\"></div>\n\n										<div id=\"comments\" class=\"comments-area\">\n\n											<div class=\"clearfix\"></div>\n\n											<div id=\"respond\" class=\"comment-respond\">\n\n												<h3 id=\"reply-title\" class=\"comment-reply-title\">Leave a Reply <small><a rel=\"nofollow\" id=\"cancel-comment-reply-link\" href=\"index.html#respond\" style=\"display:none;\">Cancel reply</a></small></h3>\n\n												<form action=\"\" method=\"post\" id=\"commentform\" class=\"comment-form\">\n\n													<p class=\"comment-notes\"><span id=\"email-notes\">Your email address will not be published.</span> Required fields are marked <span class=\"required\">*</span></p>\n\n													<p class=\"comment-form-author\"><label for=\"author\">Name <span class=\"required\">*</span></label> <input id=\"author\" name=\"author\" type=\"text\" value=\"\" size=\"30\" aria-required='true' /></p>\n\n													<p class=\"comment-form-email\"><label for=\"email\">Email <span class=\"required\">*</span></label> <input id=\"email\" name=\"email\" type=\"text\" value=\"\" size=\"30\" aria-describedby=\"email-notes\" aria-required='true' /></p>\n\n													<p class=\"comment-form-url\"><label for=\"url\">Website</label> <input id=\"url\" name=\"url\" type=\"text\" value=\"\" size=\"30\" /></p>\n\n													<p class=\"comment-form-comment\"><label for=\"comment\">Comment</label><textarea id=\"comment\" name=\"comment\" cols=\"45\" rows=\"8\" aria-describedby=\"form-allowed-tags\" aria-required=\"true\"></textarea></p>\n\n													<p class=\"form-allowed-tags\" id=\"form-allowed-tags\">You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>\n\n													<p class=\"form-submit\"> <input name=\"submit\" type=\"submit\" id=\"submit\" class=\"submit\" value=\"Post Comment\" /> <input type='hidden' name='comment_post_ID' value='25' id='comment_post_ID' /> <input type='hidden' name='comment_parent' id='comment_parent' value='0' /></p>\n\n												</form>\n\n											</div>\n\n										</div>\n\n									</div>\n\n								</div> \n\n								 \n\n								<div class=\"clearfix\"></div>\n\n							</div>\n\n						</div>\n\n						<div class=\"clearfix\"></div>\n\n					</div>\n\n					\n\n					\n\n  <?php include ('footer.php'); ?>\n\n  \n<script>\nshowUserx();\n</script>\n\n  ",
+			"file": "/C/wamp/www/anzapp/contact.php",
+			"file_size": 7985,
+			"file_write_time": 130811802704775139,
+			"settings":
+			{
+				"buffer_size": 7786,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/bhutto/Desktop/contact.php",
+			"settings":
+			{
+				"buffer_size": 7782,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/bhutto/Desktop/add-profile-account.php",
+			"settings":
+			{
+				"buffer_size": 14499,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/My Web Sites/admintemplate/theme-shop.biz/pixels/html/forms.inputs.html",
+			"settings":
+			{
+				"buffer_size": 77418,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "resources/views/layouts/header.blade.php",
 			"settings":
 			{
-				"buffer_size": 41167,
+				"buffer_size": 24392,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 690,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/MembersController.php",
+			"settings":
+			{
+				"buffer_size": 1225,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/app.php",
+			"settings":
+			{
+				"buffer_size": 7293,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -180,6 +240,23 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/anzapp/contactemail.php",
+		"/C/wamp/www/temp/contact.php",
+		"/C/wamp/www/Laravel-App/app/Http/Controllers/WelcomeController.php",
+		"/C/wamp/www/Laravel-App/resources/views/members/AddMember.blade.php",
+		"/C/wamp/www/Laravel-App/resources/views/members/AddMember",
+		"/C/wamp/www/Laravel-App/database/migrations/2015_07_20_162604_name=settings.php",
+		"/C/wamp/www/Laravel-App/database/migrations/2015_07_20_163046_settings.php",
+		"/C/wamp/www/Laravel-App/public/.htaccess",
+		"/C/wamp/www/Laravel-App/database/migrations/2015_07_15_165250_make_editable_table.php",
+		"/C/wamp/www/Laravel-App/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/wamp/www/Laravel-App/database/migrations/2015_07_15_164514_make_contact_table.php",
+		"/C/wamp/www/Laravel-App/database/migrations/2015_07_15_164046_make_users_table.php",
+		"/C/wamp/www/Laravel-App/config/app.php",
+		"/C/My Web Sites/admintemplate/theme-shop.biz/pixels/html/index.html",
+		"/C/wamp/www/Laravel-App/.env",
+		"/C/wamp/www/Laravel-App/config/database.php",
+		"/C/wamp/www/Laravel-App/database/migrations/2015_07_15_163518_make_users_table.php",
 		"/C/wamp/www/anzapp/admin/edit-events.php",
 		"/C/wamp/www/anzapp/anzapp-faq.php",
 		"/C/wamp/www/anzapp/admin/add-faq-data.php",
@@ -257,7 +334,7 @@
 	],
 	"find":
 	{
-		"height": 63.0
+		"height": 67.0
 	},
 	"find_in_files":
 	{
@@ -274,6 +351,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rewrite",
+			"rewr",
+			"url",
+			"active",
+			"ui",
+			"visit",
+			"visits",
+			"quick ",
+			"quick chat",
+			"quick ",
+			"quick ch",
 			"quick",
 			"script",
 			"scrip",
@@ -369,7 +457,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -377,15 +465,15 @@
 					"file": "resources/views/welcome.blade.php",
 					"settings":
 					{
-						"buffer_size": 59,
+						"buffer_size": 272,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								59
+								206,
+								206
 							]
 						],
 						"settings":
@@ -400,23 +488,189 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/C/My Web Sites/admintemplate/theme-shop.biz/pixels/html/index.html",
+					"file": "resources/views/members/members.blade.php",
 					"settings":
 					{
-						"buffer_size": 37883,
+						"buffer_size": 2972,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								133,
-								133
+								1013,
+								1013
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 290.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/members/AddMember.blade.php",
+					"settings":
+					{
+						"buffer_size": 4159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1475,
+								1475
+							]
+						],
+						"settings":
+						{
+							"auto_name": "@extends('layouts.header')",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 279.0,
+						"translation.y": 713.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/wamp/www/anzapp/contact.php",
+					"settings":
+					{
+						"buffer_size": 7786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7782,
+								7748
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/bhutto/Desktop/contact.php",
+					"settings":
+					{
+						"buffer_size": 7782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								883,
+								909
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/bhutto/Desktop/add-profile-account.php",
+					"settings":
+					{
+						"buffer_size": 14499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								527,
+								527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/My Web Sites/admintemplate/theme-shop.biz/pixels/html/forms.inputs.html",
+					"settings":
+					{
+						"buffer_size": 77418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25473,
+								25480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 16923.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "resources/views/layouts/header.blade.php",
+					"settings":
+					{
+						"buffer_size": 24392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								808,
+								808
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -425,52 +679,81 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 8,
+					"file": "app/Http/routes.php",
 					"settings":
 					{
-						"buffer_size": 5297,
+						"buffer_size": 690,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5272,
-								5288
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 5418.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "resources/views/layouts/header.blade.php",
-					"settings":
-					{
-						"buffer_size": 41167,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15567,
-								15567
+								539,
+								539
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
-						"translation.x": 92.0,
-						"translation.y": 8838.0,
+						"translation.x": 0.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/Http/Controllers/MembersController.php",
+					"settings":
+					{
+						"buffer_size": 1225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								425,
+								425
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "config/app.php",
+					"settings":
+					{
+						"buffer_size": 7293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3601,
+								3601
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2970.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -521,7 +804,23 @@
 		[
 			[
 				"welcome",
-				"resources/views/welcome.blade.php"
+				"app/Http/Controllers/WelcomeController.php"
+			],
+			[
+				"members",
+				"app/Http/Controllers/MembersController.php"
+			],
+			[
+				"htac",
+				"public/.htaccess"
+			],
+			[
+				"routes",
+				"app/Http/routes.php"
+			],
+			[
+				"route",
+				"app/Http/routes.php"
 			],
 			[
 				"shoe",
@@ -794,6 +1093,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 205.0,
+	"side_bar_width": 323.0,
 	"status_bar_visible": true
 }
