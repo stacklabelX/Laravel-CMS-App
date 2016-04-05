@@ -12,8 +12,14 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-Route::get('members', 'MembersController@index');
-Route::get('members/add', 'MembersController@create');
+// Route::get('members', 'MembersController@index');
+// Route::get('members/add', 'MembersController@create');
+// Route::get('members/listAll', 'MembersController@listAll');
+// Route::get('members/profile/{id}', 'MembersController@show');
+// Route::get('members/update/{id}', 'MembersController@edit');
+// Route::post('members', 'MembersController@store');
+
+Route::resource('/admin/members', 'MembersController');
 
 Route::get('home', 'HomeController@index');
 

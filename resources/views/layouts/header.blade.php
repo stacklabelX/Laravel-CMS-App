@@ -398,10 +398,10 @@
 								<!-- profile-options --> 
 							</div>
 							<!-- profile-container --> <!-- settings-container --> 
-							<div role=tabpanel class="tab-pane settings-container" id=settings-container>
+							<div role=tabpanel class="tab-pane settings-container" id="settings-container">
 								<h4 class=fw-thkr>Layout Options</h4>
 								<form>
-									<div class=form-group>
+									<div class="form-group">
 										<div class=checkbox>
 											<div class="switch info"> Fixed Header <label class=pull-right> <input type=checkbox value=fixed-header id=fixed-header-cb checked> <span class=lever></span> </label> </div>
 										</div>
