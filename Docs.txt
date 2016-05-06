@@ -1,0 +1,8 @@
+///  Active Flags in Memebers Tables 
+ - 0 = inActive
+ - 1 = Active
+ - 2 = Banned
+ - 3 = Deleted
+
+
+

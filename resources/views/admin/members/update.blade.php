@@ -9,6 +9,21 @@
 
 @section('content')
 
+<!-- will be used to show any messages -->
+@if (Session::has('message'))
+<div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong>{{ Session::get('message') }}
+</div>
+   
+@endif
+@if (Session::has('error'))
+   <div class="alert alert-danger">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Error!</strong>{{ Session::get('error') }}
+</div>
+@endif
+
  <div class="form-group"> 
     <p>Update Inforation of {!! $user['username'] !!} </p>
 
@@ -87,50 +102,7 @@
                                             </div>
                                     </div>
                               </div>
-
-                              <div class="row">
-                                      <div class="col-xs-4">
-
-                                        <div class="form-group">
-                                           <div class="input-md input-field"> 
-                                           
-                                              {!!
-                                                Form::text('street',$user['street'], 
-                                                array( 'id' => 'street' ,
-                                                'class' => 'validate')) 
-                                              !!} 
-                                            <label for="street" class="">Street</label> </div>
-                                          </div>
-                                    </div>
-                                       <div class="col-xs-4">
-
-                                          <div class="form-group">
-                                             <div class="input-md input-field"> 
-                                             
-                                                {!!
-                                                  Form::text('suburb',$user['suburb'], 
-                                                  array( 'id' => 'suburb' ,
-                                                  'class' => 'validate')) 
-                                                !!} 
-                                              <label for="suburb" class="">Suburb</label> </div>
-                                            </div>
-                                    </div>
-                                     <div class="col-xs-4">
-
-                                          <div class="form-group">
-                                             <div class="input-md input-field"> 
-                                             
-                                                {!!
-                                                  Form::text('postcode',$user['postcode'], 
-                                                  array( 'id' => 'postcode' ,
-                                                  'class' => 'validate')) 
-                                                !!} 
-                                              <label for="postcode" class="">Postcode</label> </div>
-                                            </div>
-                                    </div>
-                              </div>
-
-                               <div class="form-group">
+                             <div class="form-group">
                                  <div class="input-md input-field"> 
                                  
                                     {!!
@@ -151,6 +123,25 @@
                                     !!} 
                                   <label for="phone" class="">Phone</label> </div>
                                 </div>
+                              <div class="row">
+                                      <div class="col-xs-12">
+
+                                        <div class="form-group">
+                                           <div class="input-md input-field"> 
+                                           
+                                              {!!
+                                                Form::text('address',$user['address'], 
+                                                array( 'id' => 'address' ,
+                                                'class' => 'validate')) 
+                                              !!} 
+                                            <label for="address" class="">Street</label> </div>
+                                          </div>
+                                    </div>
+                                      
+                              </div>
+
+                            
+
 
                                  <div class="form-group">
                                  <div class="input-md input-field"> 
@@ -209,7 +200,10 @@
                                 </div>
 
  
-   {!! Form::submit('Update!', array( 'data-ui-sref'=>'app.views.dashboard' ,'class' => 'btn btn-default btn-primary text-uppercase ls-xs fw-lght')) !!}
+   {!! Form::submit('Update!', array( 
+                'data-ui-sref'=>'app.views.dashboard' ,
+                'class' => 'btn btn-default btn-primary text-uppercase ls-xs fw-lght'))
+     !!}
                   
          
                 </div>
@@ -218,7 +212,7 @@
                  <div class="panel-footer">
                         <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
                         <span class="pull-right">
-                             <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                             <a data-original-title="Remove this user" onclick="changeStatus({!! $user['id'] !!},'PUT',3)" data-toggle="tooltip" type="button" class="btn btn-square btn-danger"><i class="glyphicon glyphicon-remove"></i> Delete Profile</a>
                         </span>
                     </div>
             

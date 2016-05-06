@@ -25,6 +25,8 @@ class MakeContactTable extends Migration {
 			$table->string("youtube")->nullable();
  			
  			$table->text("mapcode");
+			$table->timestamps();
+ 			
 		});
 	}
 

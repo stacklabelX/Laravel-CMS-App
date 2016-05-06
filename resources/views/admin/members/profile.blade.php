@@ -1,8 +1,8 @@
  @extends('layouts.header')
 
- @section('title', 'Member Details')
+ @section('title', 'Member Profile')
  @section('mainTitle', 'Members')
- @section('subTitle', 'Member Details')
+ @section('subTitle', 'Member Profile')
  @section('panelHeading', '')
 
 
@@ -10,10 +10,21 @@
 @section('content')
 
  <div class="form-group">	
-    <p>Welcome to the Setup of My Proper Admin Panel</p>
-
-    <br/>
-
+  <!-- will be used to show any messages -->
+@if (Session::has('message'))
+<div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong>{{ Session::get('message') }}
+</div>
+   
+@endif
+@if (Session::has('error'))
+   <div class="alert alert-danger">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Error!</strong>{{ Session::get('error') }}
+</div>
+@endif
+    
     {!! Form::open() !!}
 
     
@@ -55,12 +66,11 @@
                    
                           
                              <tr>
-                        <td>Gender</td>
-                        <td>{!! $user['gender'] !!}</td>
+                         
                       </tr>
                         <tr>
                         <td>Home Address</td>
-                        <td>{!! $user['street'] . $user['suburb']  . $user['postcode'] !!}</td>
+                        <td>{!! $user['address']  . $user['postcode'] !!}</td>
                       </tr>
                       <tr>
                         <td>Email</td>
@@ -97,10 +107,17 @@
               </div>
             </div>
                  <div class="panel-footer">
-                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-square btn-primary"><i class="glyphicon glyphicon-envelope"></i> Email</a>
                         <span class="pull-right">
-                            <a href="{!! $user['id']!!}/edit" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
-                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                            <a href="{!! $user['id']!!}/edit" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-square btn-warning"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+                            @if ($user['active'] === 1)
+                            <a data-original-title="Remove this user"  onclick="changeStatus({!! $user['id'] !!},'PUT',2)" data-toggle="tooltip" type="button" class="btn btn-square btn-danger"><i class="glyphicon glyphicon-remove"></i> Ban Account</a>
+                   
+           @elseif ($user['active'] === 2)
+                            <a data-original-title="Remove this user" onclick="changeStatus({!! $user['id'] !!},'PUT',1)" data-toggle="tooltip" type="button" class="btn btn-square btn-danger"><i class="glyphicon glyphicon-remove"></i>Un-Ban Account</a>
+          @else
+            <i class="fa fa-thumbs-up success"></i>
+          @endif 
                         </span>
                     </div>
             

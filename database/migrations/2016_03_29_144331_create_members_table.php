@@ -15,27 +15,25 @@ class CreateMembersTable extends Migration {
 		Schema::create('members', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('username');
+			$table->string('username')->unique();
 			$table->string('firstName');
 			$table->string('lastName');
 			$table->string('phone');
-			$table->string('street');
-			$table->string('suburb');
-			$table->integer('postcode');
-			$table->string('gender');
-			$table->string('infoShared');
-			 
+			$table->string('address'); 
+			$table->integer('postcode'); 	 
 			$table->string('businessName');
 			$table->string('businessPhone');
 			$table->string('businessLocation');
 			$table->string('Department');
 			$table->string('profilePic');
-
 			$table->string('email')->unique();
 			$table->string('password', 60);
-			$table->rememberToken();
+			$table->tinyInteger('infoShared');			 
+			$table->tinyInteger('active');	
+			$table->rememberToken(); 
+			$table->timestamp("lastLogin");
 			$table->timestamps();
-			$table->timestamp("LastLogin");
+			
 		});
 	}
 

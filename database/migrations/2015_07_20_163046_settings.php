@@ -14,12 +14,9 @@ class Settings extends Migration {
 	{
 		Schema::create('SiteSettings', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->timestamps();
-			$table->increments('id');
+			$table->increments('id'); 
 			$table->string("FieldName");
 			$table->string("value"); 
-
 			$table->timestamps();
 		});
 	}

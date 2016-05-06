@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSiteUsersTable extends Migration {
+class SitePages extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,17 @@ class CreateSiteUsersTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('site_users', function(Blueprint $table)
+		//
+			Schema::create('SitePages', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string("pageName")->nullable();
+			$table->string("pageHeading")->nullable();
+ 			$table->tinyInteger('layoutType')->nullable();
+ 			$table->text("description");
 			$table->timestamps();
-		});
+ 			
+		 });
 	}
 
 	/**
@@ -26,7 +32,9 @@ class CreateSiteUsersTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('site_users');
+		//
+		Schema::drop('SitePages');
+
 	}
 
 }

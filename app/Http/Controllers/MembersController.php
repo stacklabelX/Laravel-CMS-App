@@ -22,12 +22,14 @@ class MembersController extends Controller {
 	{
 		//
 		$data = 'list of all users';
-		$users= members::all()->toArray(); 
+		$users= members::where('active','<>',3)->get(); 
 		//echo var_dump($users); exit;
 		return view('admin.members.list')->with('users',$users);
-		//return view('members.members');
+	 
 		  
 	}
+
+ 
 
 	/**
 	 * Show the form for creating a new resource.
@@ -36,11 +38,10 @@ class MembersController extends Controller {
 	 */
 	public function create()
 	{
-
-
-
 		//laoding View main page for members
-		return view('members.Add');
+
+            return Redirect::to('admin/members/');
+		 
 
 	}
 
@@ -50,33 +51,38 @@ class MembersController extends Controller {
 	 * @return Response
 	 */
 	public function store()
-	{
-		 // //
-		// // validate
-  //       // read more on validation at http://laravel.com/docs/validation
-        $rules = array(
-            'username'       => 'required',
-            'email'      => 'required|email',
-            'phone' => 'required|numeric'
-        );
-        $validator = Validator::make(Input::all(), $rules);
-        // process the login
-        if ($validator->fails()) {
-            return Redirect::to('admin.memmbers/create')
-                ->withErrors($validator)
-                ->withInput(Input::except('password'));
-        } else {
-            // store
-            $member = new members;
-            $member->username       = Input::get('username');
-            $member->email      = Input::get('email');
-            $member->phone = Input::get('phone');
-            $member->save();
+	{ 
+		try {
+		        $rules = array(
+		            'username'       => 'required',
+		            'email'      => 'required|email',
+		            'phone' => 'required|numeric'
+		        );
+		        $validator = Validator::make(Input::all(), $rules);
+		        // process the login
+		        if ($validator->fails()) {
+		            return Redirect::to('admin/members/')
+		                ->withErrors($validator)
+		                ->withInput(Input::except('password'));
+		        } else {
+		            // store
+		            $member = new members;
+		            $member->username       = Input::get('username');
+		            $member->email      = Input::get('email');
+		            $member->phone = Input::get('phone');
+					$member->profilePic= "avatar.png";
 
-            // redirect
-            Session::flash('message', 'Successfully created nerd!');
-            return Redirect::to('admin/members');
-        }
+		            $member->save();
+
+		            // redirect
+		            Session::flash('message', 'Successfully created Member!');
+		            return Redirect::to('admin/members/');
+		        }
+        }catch (\Illuminate\Database\QueryException $e) { 
+			     Session::flash('error', "SQL Error: " . $e->getMessage() . "\n");
+		            return Redirect::to('admin/members/');
+
+		}
 	}
 
 	/**
@@ -86,12 +92,10 @@ class MembersController extends Controller {
 	 * @return Response
 	 */
 	public function show($id)
-	{
-		//$id
-
-		
+	{ 
 		$user= members::find($id)->toArray(); 
 		//echo var_dump($users); exit;
+		if($user['active']==3) {return Redirect::to('admin/members/');}
 		return view('admin.members.profile')->with('user',$user);
 	}
 	
@@ -123,34 +127,40 @@ class MembersController extends Controller {
 	 * Update the specified resource in storage.
 	 *
 	 * @param  int  $id
-	 * @return Response
+	 * @return Redirect to page
 	 */
 	public function update($id, Request $request)
 	{
 		//
+		try {
+				$code = Uuid::generate(1);
+				$user= members::findOrFail($id); 
+				//dd ($code->time.' - '.$user->username .'_'. time() );
+				
 
-		$code = Uuid::generate(1);
-		$user= members::findOrFail($id); 
-		//dd ($code->time.' - '.$user->username .'_'. time() );
-		
+				if (is_null($request->file('image'))) {
+					# code...
+				}else {
+					$imageName = $code->time . '.' . 
+			        $request->file('image')->getClientOriginalExtension();
+					$request->file('image')->move(
+					        base_path() . '/public/images/users/', $imageName
+					);
+					$user->profilePic= $imageName;
+				}
 
-		if (is_null($request->file('image'))) {
-			# code...
-		}else {
-			$imageName = $code->time . '.' . 
-	        $request->file('image')->getClientOriginalExtension();
-			$request->file('image')->move(
-			        base_path() . '/public/images/users/', $imageName
-			);
-			$user->profilePic= $imageName;
-			 
-			
+				if($request->ajax()) { 
+					$user->active=$request->statuscode;
+					 $user->update($request->all());
+					 return;
+		        }
+				$user->update($request->all());
+				return redirect('admin/members');
+		 }catch (\Illuminate\Database\QueryException $e) { 
+			     Session::flash('error', "SQL Error: " . $e->getMessage() . "\n");
+		            return Redirect::to('admin/members/'.$id.'/edit');
+
 		}
-			 $user->update($request->all());
-
-
-
-		return redirect('admin/members');
 	}
 
 	/**
@@ -159,10 +169,17 @@ class MembersController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy($id , Request $request)
 	{
-		//
 
+		if(!$request->ajax()) {
+            return json_encode( array(
+                'msg' => 'Unauthorized attempt to create setting'
+            ) );
+        }
+		$user= members::find($id);
+		$user->active=3;
+		$user->save();
 	}
 
 }

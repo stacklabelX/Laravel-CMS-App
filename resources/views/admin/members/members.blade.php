@@ -53,7 +53,7 @@
             <!-- p --> 
             <p class="text-center m-t-xs"> </p>
             <!-- p --> <!-- p --> 
-            <p class="text-center fw-thkr">{!! HTML::linkAction('MembersController@listAll', 'List All Users') !!}</p>
+            <p class="text-center fw-thkr">{!! HTML::linkAction('MembersController@index', 'List All Users') !!}</p>
           
              <!-- p --> 
          </div>

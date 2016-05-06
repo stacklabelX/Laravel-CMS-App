@@ -12,16 +12,34 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-// Route::get('members', 'MembersController@index');
-// Route::get('members/add', 'MembersController@create');
-// Route::get('members/listAll', 'MembersController@listAll');
-// Route::get('members/profile/{id}', 'MembersController@show');
-// Route::get('members/update/{id}', 'MembersController@edit');
-// Route::post('members', 'MembersController@store');
+ 
 
-Route::resource('/admin/members', 'MembersController');
+Route::resource('admin/members', 'MembersController'); 
 
-Route::get('home', 'HomeController@index');
+/*
+==================================================
+| Custom Listing of Modules
+==================================================
+*/
+Route::get('admin/list/members/', function(){
+	//return view();
+});
+Route::get('admin/list/members/{type}', function ($type) {
+		//				Module, type
+		$meta =  array('Members', ucfirst($type));
+		$columns =  array('username', 'email',  'phone' , 'Address');
+		$users;
+		if ($type=='ban') {
+				$users= App\members::where('active',2)->get(); 
+		}else if ($type=='inactive') {
+				$users= App\members::where('active',0)->get(); 
+		}else if ($type=='active') {
+				$users= App\members::where('active',1)->get(); 
+		}
+		return View::make('admin.sitepages.list', compact('columns', 'users','meta'));
+
+});
+Route::get('admin/home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
